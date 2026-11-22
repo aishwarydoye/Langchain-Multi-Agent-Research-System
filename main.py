@@ -1,5 +1,5 @@
-from src.tools.tools import search_tool, scrape_url_tool
 from rich import print
+from src.pipelines.pipeline import run_research_pipeline
 
 
-print(scrape_url_tool.invoke("https://en.wikipedia.org/wiki/Wiki"))
+print(run_research_pipeline("gold price drop"))

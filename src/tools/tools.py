@@ -15,7 +15,7 @@ load_dotenv()
 
 @tool
 def search_tool(query:str)->str:
-    "This tool access web and get the info and website from the internet and return title, url and content"
+    """Search the web for recent and reliable information on a topic . Returns Titles , URLs and snippets."""
 
     client=TavilyClient()
     search_result=client.search(query=query, max_results=5)
